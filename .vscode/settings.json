@@ -1,0 +1,30 @@
+{
+  "workbench.editorAssociations": {
+    "*.md": "vscode.markdown.preview.editor"
+  },
+  "markdown.preview.openMarkdownLinks": "inPreview",
+  "markdown.preview.scrollEditorWithPreview": true,
+  "markdown.preview.scrollPreviewWithEditor": true,
+  "markdown.preview.doubleClickToSwitchToEditor": false,
+  "python.envFile": "${workspaceFolder}\\.env",
+  "python.terminal.activateEnvironment": true,
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.symbolPath": "on",
+  "outline.showFunctions": true,
+  "outline.showMethods": true,
+  "outline.showClasses": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.stickyScroll.maxLineCount": 5,
+  "editor.gotoLocation.multipleDefinitions": "peek",
+  "editor.gotoLocation.multipleDeclarations": "peek",
+  "python.analysis.indexing": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.diagnosticMode": "workspace",
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}"
+  ],
+  "terminal.integrated.env.windows": {
+    "PYTHONPATH": "${workspaceFolder}",
+    "MPLCONFIGDIR": "${workspaceFolder}\\outputs\\.matplotlib"
+  }
+}
