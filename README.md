@@ -14,6 +14,8 @@
 - `docs/roadmap.md`：长期学习路线。
 - `docs/lesson_01_newton_particle.md`：第一讲，质点动力学与状态空间形式。
 - `docs/lesson_01_free_fall_code.md`：第一讲案例代码实现说明。
+- `docs/lesson_02_generalized_coordinate_oscillator.md`：第二讲，自由度、广义坐标与单自由度振子。
+- `docs/lesson_02_oscillator_code.md`：第二讲振子案例的公式与代码对应。
 - `mbd/`：逐步扩展的 Python 多体动力学求解器代码。
 - `examples/`：每个概念对应的可运行示例。
 
@@ -43,3 +45,15 @@ python -m examples.lesson_01_free_fall
 示例会生成：
 
 - `outputs/lesson_01_free_fall.svg`
+
+## 运行第二讲示例
+
+在仓库根目录运行：
+
+```powershell
+python -m examples.lesson_02_linear_oscillator
+```
+
+示例会生成：
+
+- `outputs/lesson_02_linear_oscillator.svg`

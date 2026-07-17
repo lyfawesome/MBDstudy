@@ -265,11 +265,12 @@ $$
 代码中对应：
 
 ```python
-scale = max(abs(float(values[0])), 1.0)
+reference = abs(float(values[0]))
+scale = reference if reference > 1e-12 else 1.0
 return (values - values[0]) / scale
 ```
 
-这里用 `max(..., 1.0)` 是为了避免初始值接近零时出现除以很小数导致的数值放大。
+当初始值明显非零时，代码使用初始值的绝对值作为尺度，得到真正的相对漂移；当初始值接近零时，改用 1.0 作为尺度，避免除以很小数导致数值放大。
 
 ## 7. 可视化数据流
 

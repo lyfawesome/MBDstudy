@@ -22,5 +22,19 @@ def particle_mechanical_energy(
 def relative_drift(values: Array) -> Array:
     """Relative drift from the first sample, robust to zero initial values."""
 
-    scale = max(abs(float(values[0])), 1.0)
+    reference = abs(float(values[0]))
+    scale = reference if reference > 1e-12 else 1.0
     return (values - values[0]) / scale
+
+
+def oscillator_mechanical_energy(
+    mass: float,
+    stiffness: float,
+    displacement: Array,
+    velocity: Array,
+) -> Array:
+    """Mechanical energy of a linear undamped oscillator."""
+
+    kinetic = 0.5 * mass * velocity * velocity
+    elastic = 0.5 * stiffness * displacement * displacement
+    return kinetic + elastic
