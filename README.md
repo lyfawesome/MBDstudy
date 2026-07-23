@@ -16,6 +16,8 @@
 - `docs/lesson_01_free_fall_code.md`：第一讲案例代码实现说明。
 - `docs/lesson_02_generalized_coordinate_oscillator.md`：第二讲，自由度、广义坐标与单自由度振子。
 - `docs/lesson_02_oscillator_code.md`：第二讲振子案例的公式与代码对应。
+- `docs/lesson_03_damping_forcing_resonance.md`：第三讲，阻尼、外部激励、能量平衡与共振。
+- `docs/lesson_03_damped_forced_code.md`：第三讲阻尼受迫振子案例的代码说明。
 - `mbd/`：逐步扩展的 Python 多体动力学求解器代码。
 - `examples/`：每个概念对应的可运行示例。
 
@@ -57,3 +59,21 @@ python -m examples.lesson_02_linear_oscillator
 示例会生成：
 
 - `outputs/lesson_02_linear_oscillator.svg`
+
+## 运行第三讲示例
+
+在仓库根目录运行：
+
+```powershell
+python -m examples.lesson_03_damped_forced_oscillator
+```
+
+示例会生成：
+
+- `outputs/lesson_03_damped_forced_oscillator.svg`
+
+运行自动测试：
+
+```powershell
+python -m unittest discover -s tests
+```

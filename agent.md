@@ -28,13 +28,13 @@
 
 本项目高度依赖数学公式的正确显示。所有 Markdown 文档必须认真区分行内公式和行间公式。
 
-- 行内短公式优先使用 `\(...\)`，例如 `\(m\boldsymbol{a}=\boldsymbol{f}\)`；不要再用 `$...$` 作为默认行内公式写法。
+- 行内短公式使用 `$...$`，例如 `$m\boldsymbol{a}=\boldsymbol{f}$`，以兼容 VS Code 内置 Markdown 预览。
 - 行间公式使用 `$$...$$`，公式单独成段，不要放进代码块。
 - 变量说明、带分式的公式、矩阵、向量组、约束方程等容易影响预览效果的内容，优先使用行间公式，然后在下一行写中文解释。
 - 不要用反引号包裹数学变量或数学方程；反引号只用于代码标识符、文件路径、命令和 API 名称。
-- 向量使用 \(\boldsymbol{r}\)、\(\boldsymbol{v}\)、\(\boldsymbol{a}\)，矩阵使用大写粗体或明确符号，如 \(\boldsymbol{M}(\boldsymbol{q})\)。
-- 微分写法优先使用 \(\dot{\boldsymbol{r}}\)、\(\ddot{\boldsymbol{r}}\) 或 \(\frac{d\boldsymbol{y}}{dt}\)，避免把数学表达式写成纯文本。
-- 函数名和物理量下标可用 `\mathrm{}`，例如 \(E_{\mathrm{kin}}\)、\(E_{\mathrm{pot}}\)。
+- 向量使用 $\boldsymbol{r}$、$\boldsymbol{v}$、$\boldsymbol{a}$，矩阵使用大写粗体或明确符号，如 $\boldsymbol{M}(\boldsymbol{q})$。
+- 微分写法优先使用 $\dot{\boldsymbol{r}}$、$\ddot{\boldsymbol{r}}$ 或 $\frac{d\boldsymbol{y}}{dt}$，避免把数学表达式写成纯文本。
+- 函数名和物理量下标可用 `\mathrm{}`，例如 $E_{\mathrm{kin}}$、$E_{\mathrm{pot}}$。
 - 多行推导使用 `aligned`：
 
 $$
@@ -69,7 +69,7 @@ $$
 5. 数据流如何从初始条件进入求解器，再到分析和可视化。
 6. 代码结果用什么物理量或数值趋势验证。
 
-实现文档中的公式仍然遵守 LaTeX 规范：短行内公式使用 `\(...\)`，复杂公式使用 `$$...$$` 单独成段。
+实现文档中的公式仍然遵守 LaTeX 规范：短行内公式使用 `$...$`，复杂公式使用 `$$...$$` 单独成段。
 
 ## 当前学习路线
 

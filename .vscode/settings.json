@@ -6,6 +6,7 @@
   "markdown.preview.scrollEditorWithPreview": true,
   "markdown.preview.scrollPreviewWithEditor": true,
   "markdown.preview.doubleClickToSwitchToEditor": false,
+  "markdown.math.enabled": true,
   "python.envFile": "${workspaceFolder}\\.env",
   "python.terminal.activateEnvironment": true,
   "breadcrumbs.enabled": true,

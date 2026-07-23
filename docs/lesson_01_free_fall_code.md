@@ -133,7 +133,7 @@ $$
 gravity_force = np.array([0.0, 0.0, -mass * g], dtype=float)
 ```
 
-这里假设坐标系的 \(z\) 轴向上，所以重力方向是负 \(z\) 方向。
+这里假设坐标系的 $z$ 轴向上，所以重力方向是负 $z$ 方向。
 
 `constant_gravity` 返回的是一个函数：
 
@@ -180,7 +180,7 @@ k4 = rhs(t + dt, y + dt * k3)
 return y + (dt / 6.0) * (k1 + 2.0 * k2 + 2.0 * k3 + k4)
 ```
 
-这里的 `rhs` 就是数学上的 \(\boldsymbol{g}(t,\boldsymbol{y})\)。
+这里的 `rhs` 就是数学上的 $\boldsymbol{g}(t,\boldsymbol{y})$。
 
 ## 5. 时间历史数据结构
 
@@ -195,8 +195,8 @@ class TimeHistory:
 
 对应数学含义：
 
-- `t[i]` 是第 \(i\) 个时间点。
-- `y[i]` 是第 \(i\) 个时间点的状态向量。
+- `t[i]` 是第 $i$ 个时间点。
+- `y[i]` 是第 $i$ 个时间点的状态向量。
 
 所以：
 
@@ -252,7 +252,7 @@ return kinetic + potential
 
 - `velocity * velocity` 是逐元素相乘。
 - `np.sum(..., axis=1)` 表示对每一行求和，即计算每个时间点的速度平方和。
-- `position[:, 2]` 取所有时间点的 \(z\) 坐标。
+- `position[:, 2]` 取所有时间点的 $z$ 坐标。
 
 相对漂移定义为：
 

@@ -229,7 +229,7 @@ elastic = 0.5 * stiffness * displacement * displacement
 return kinetic + elastic
 ```
 
-这里的 `displacement` 和 `velocity` 都是长度为 \(N\) 的数组。NumPy 的乘法逐元素执行，因此一次得到全部时间点的能量。
+这里的 `displacement` 和 `velocity` 都是长度为 $N$ 的数组。NumPy 的乘法逐元素执行，因此一次得到全部时间点的能量。
 
 ## 8. 步长收敛分析
 
@@ -264,7 +264,7 @@ $$
 p\log(\Delta t)+\log C
 $$
 
-`np.polyfit(x, y, 1)` 拟合一次多项式，返回斜率和截距。索引 `[0]` 取得斜率，也就是观测收敛阶 \(p\)。
+`np.polyfit(x, y, 1)` 拟合一次多项式，返回斜率和截距。索引 `[0]` 取得斜率，也就是观测收敛阶 $p$。
 
 ## 9. 四幅趋势图分别检查什么
 

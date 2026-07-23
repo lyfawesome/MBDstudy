@@ -15,7 +15,7 @@ This repository is a long-term learning and implementation project for multibody
 - Theory documents live in `docs/`.
 - Every runnable example must have a matching code implementation document.
 - Code implementation documents must connect formulas to code objects, array dimensions, functions, classes, and non-obvious Python syntax.
-- Inline short formulas should use `\(...\)`.
+- Inline short formulas should use `$...$` for compatibility with VS Code's built-in Markdown preview.
 - Complex formulas, vectors, matrices, derivatives, and constraints should use standalone `$$...$$` blocks.
 - Do not wrap mathematical variables or equations in backticks unless discussing literal code.
 
